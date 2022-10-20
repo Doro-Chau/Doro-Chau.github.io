@@ -1,7 +1,10 @@
 import React from "react";
 import '../App.css';
+import Ball from "./Ball";
 
 export default function About() {
+
+    
 
     function getTitle(text) {
         const output = []
@@ -31,7 +34,7 @@ export default function About() {
                 <h6>&nbsp;&nbsp;&nbsp;&nbsp;&#60;/p&#62;</h6>
             </div>
             <div className="about-ball">
-
+                <Ball />
             </div>
             <div className="scroll" style={{top: '250vh'}}>
                 <h5>Scroll Down &#x2192;</h5>

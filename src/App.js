@@ -9,10 +9,11 @@ import Title from './Sections/Title';
 
 
 function App() {
+
+
   return (
     <div className="app">
       <Title />
-      
       <Portfolio />
       <About />
       <Blog />

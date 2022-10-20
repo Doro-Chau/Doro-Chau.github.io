@@ -1,5 +1,8 @@
 import React from "react";
+import { read } from "two.js/src/utils/interpret-svg";
 import '../App.css';
+
+import { springyEmojiCursor } from "./Spring";
 
 export default function Title() {
 
@@ -10,6 +13,14 @@ export default function Title() {
     const thirdLineTwo = 'developer';
 
     const [animation, setAnimation] = React.useState(true);
+    
+    const myRef = React.useRef(null)
+
+    React.useEffect(() => {
+        const targetElement = document.querySelector("#title");
+        new springyEmojiCursor({element: targetElement});
+    }, [])
+    
         
     React.useEffect(() =>{
         setTimeout(() => {
@@ -28,9 +39,37 @@ export default function Title() {
 
         return output
     }
+    
+    const [position, setPosition] = React.useState(
+        {
+            list: []
+        }
+    )
+
+    var balls = []
+    React.useEffect(
+        () => {
+            for (let i = position.length; i < 0; i--) {
+                if (i < position.length - 50) {
+                    break
+                } 
+                balls.push(
+                <div className='ribbon-ball' style={{position: 'absolute', top: position[i][1], left: position[i][0], 
+                    width: 10, height: 10, backgroundColor: 'red', transition: '0.05s'}}></div>
+            )}
+        }, [position]
+    )
+    
+
 
     return(
-        <div className="width title">
+        <div  ref={myRef} id='title' className="width title" onMouseMove={(event) => {
+            setPosition((state) => ({
+                list: [...state.list, [event.clientX, event.clientY]]
+            }));
+            
+            }}>
+            <div id='title'></div>
             <h6>&#60;html&#62;</h6>
             <h6>&nbsp;&nbsp;&#60;body&#62;</h6>
             <h6>&nbsp;&nbsp;&nbsp;&nbsp;&#60;h1&#62;</h6>
@@ -57,6 +96,9 @@ export default function Title() {
             <div className="scroll">
                 <h5>Scroll Down &#x2192;</h5>
                 <h5>Scroll Down &#x2192;</h5>
+            </div>
+            <div>
+                {balls}
             </div>
         </div>
     )

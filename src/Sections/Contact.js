@@ -13,6 +13,22 @@ export default function Contact() {
         return output
     }
 
+    const [inputValue, setInputValue] = React.useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+    })
+
+    function handleChange(event) {
+        setInputValue((state) => (
+            {
+                ...state,
+                [event.target.id]: event.target.value,
+            }
+        ))
+    }
+
     return(
         <div className="width contact">
             <div className="about-textcont">
@@ -31,22 +47,23 @@ export default function Contact() {
                 <h6>&nbsp;&nbsp;&nbsp;&nbsp;&#60;form&#62;</h6>
                 <form className='contact-form' onSubmit={(event) => event.preventDefault()}>
                     <div style={{display: 'inline-block'}}>
-                        <input placeholder="Name" />
+                        <input type='text' id='name' placeholder="Name" value={inputValue.name} onChange={handleChange} />
                         <hr />
                     </div>
                     <div style={{display: 'inline-block'}}>
-                        <input placeholder="Email"/>
+                        <input type='email' id='email' placeholder="Email" value={inputValue.email} onChange={handleChange} />
                         <hr />
                     </div>
                     <div>
-                        <input placeholder="Subject"/>
+                        <input type='text' id='subject' placeholder="Subject" value={inputValue.subject} onChange={handleChange} />
                         <hr />
                     </div>
                     <div>
-                        <textarea placeholder="Message"/>
+                        <textarea id='message' placeholder="Message" value={inputValue.message} onChange={handleChange} />
                         <hr />
                     </div>
-                    <button style={{marginTop: '10px'}} >Send Message</button>
+                
+                    <button style={{marginTop: '10px'}} onClick={() => window.open(`mailto:dorothychau1316@gmail.com?subject=${inputValue.name}-${inputValue.subject}&cc=${inputValue.email}&body=${inputValue.message}`)}>Send Message</button>
                 </form>
                 <h6>&nbsp;&nbsp;&nbsp;&nbsp;&#60;/form&#62;</h6>
                 
