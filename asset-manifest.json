@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Doro-Chau/static/css/main.c23da5eb.css",
-    "main.js": "/Doro-Chau/static/js/main.2338ce13.js",
-    "static/js/787.403e450d.chunk.js": "/Doro-Chau/static/js/787.403e450d.chunk.js",
-    "static/media/map.png": "/Doro-Chau/static/media/map.00a933cd6169e5ad900e.png",
-    "static/media/button-background.svg": "/Doro-Chau/static/media/button-background.f26d30c321fca06e57c8.svg",
-    "index.html": "/Doro-Chau/index.html",
-    "main.c23da5eb.css.map": "/Doro-Chau/static/css/main.c23da5eb.css.map",
-    "main.2338ce13.js.map": "/Doro-Chau/static/js/main.2338ce13.js.map",
-    "787.403e450d.chunk.js.map": "/Doro-Chau/static/js/787.403e450d.chunk.js.map"
+    "main.css": "/static/css/main.1546580d.css",
+    "main.js": "/static/js/main.ef1cb635.js",
+    "static/js/787.403e450d.chunk.js": "/static/js/787.403e450d.chunk.js",
+    "static/media/map.png": "/static/media/map.00a933cd6169e5ad900e.png",
+    "static/media/button-background.svg": "/static/media/button-background.f26d30c321fca06e57c8.svg",
+    "index.html": "/index.html",
+    "main.1546580d.css.map": "/static/css/main.1546580d.css.map",
+    "main.ef1cb635.js.map": "/static/js/main.ef1cb635.js.map",
+    "787.403e450d.chunk.js.map": "/static/js/787.403e450d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c23da5eb.css",
-    "static/js/main.2338ce13.js"
+    "static/css/main.1546580d.css",
+    "static/js/main.ef1cb635.js"
   ]
 }
