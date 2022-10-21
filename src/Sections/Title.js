@@ -1,5 +1,4 @@
 import React from "react";
-import { read } from "two.js/src/utils/interpret-svg";
 import '../App.css';
 
 import { springyEmojiCursor } from "./Spring";
