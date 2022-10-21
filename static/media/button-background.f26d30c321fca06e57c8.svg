@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="78.378693mm"
+   height="26.458336mm"
+   viewBox="0 0 78.378693 26.458336"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="button-background.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-38.645986,-87.75794)">
+    <path
+       id="rect234"
+       style="fill:#741734;stroke-width:0.502999;stroke-linecap:round;stroke-miterlimit:18.1;stroke-dashoffset:5.07364;stroke-opacity:0.670455;paint-order:markers fill stroke"
+       d="M 117.02467,87.757946 H 38.645987 v 26.458334 h 67.184533 z" />
+  </g>
+</svg>
